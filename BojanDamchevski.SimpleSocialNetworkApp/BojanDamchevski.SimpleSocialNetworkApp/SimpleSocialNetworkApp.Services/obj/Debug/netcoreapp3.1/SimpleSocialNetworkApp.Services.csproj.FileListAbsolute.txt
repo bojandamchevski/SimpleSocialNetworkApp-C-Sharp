@@ -1,0 +1,12 @@
+C:\Users\Com\Desktop\BojanDamchevski.SimpleSocialNetworkApp\BojanDamchevski.SimpleSocialNetworkApp\SimpleSocialNetworkApp.Services\obj\Debug\netcoreapp3.1\SimpleSocialNetworkApp.Services.csproj.AssemblyReference.cache
+C:\Users\Com\Desktop\BojanDamchevski.SimpleSocialNetworkApp\BojanDamchevski.SimpleSocialNetworkApp\SimpleSocialNetworkApp.Services\obj\Debug\netcoreapp3.1\SimpleSocialNetworkApp.Services.AssemblyInfoInputs.cache
+C:\Users\Com\Desktop\BojanDamchevski.SimpleSocialNetworkApp\BojanDamchevski.SimpleSocialNetworkApp\SimpleSocialNetworkApp.Services\obj\Debug\netcoreapp3.1\SimpleSocialNetworkApp.Services.AssemblyInfo.cs
+C:\Users\Com\Desktop\BojanDamchevski.SimpleSocialNetworkApp\BojanDamchevski.SimpleSocialNetworkApp\SimpleSocialNetworkApp.Services\obj\Debug\netcoreapp3.1\SimpleSocialNetworkApp.Services.csproj.CoreCompileInputs.cache
+C:\Users\Com\Desktop\BojanDamchevski.SimpleSocialNetworkApp\BojanDamchevski.SimpleSocialNetworkApp\SimpleSocialNetworkApp.Services\bin\Debug\netcoreapp3.1\SimpleSocialNetworkApp.Services.deps.json
+C:\Users\Com\Desktop\BojanDamchevski.SimpleSocialNetworkApp\BojanDamchevski.SimpleSocialNetworkApp\SimpleSocialNetworkApp.Services\bin\Debug\netcoreapp3.1\SimpleSocialNetworkApp.Services.dll
+C:\Users\Com\Desktop\BojanDamchevski.SimpleSocialNetworkApp\BojanDamchevski.SimpleSocialNetworkApp\SimpleSocialNetworkApp.Services\bin\Debug\netcoreapp3.1\SimpleSocialNetworkApp.Services.pdb
+C:\Users\Com\Desktop\BojanDamchevski.SimpleSocialNetworkApp\BojanDamchevski.SimpleSocialNetworkApp\SimpleSocialNetworkApp.Services\bin\Debug\netcoreapp3.1\SimpleSocialNetworkApp.Domain.dll
+C:\Users\Com\Desktop\BojanDamchevski.SimpleSocialNetworkApp\BojanDamchevski.SimpleSocialNetworkApp\SimpleSocialNetworkApp.Services\bin\Debug\netcoreapp3.1\SimpleSocialNetworkApp.Domain.pdb
+C:\Users\Com\Desktop\BojanDamchevski.SimpleSocialNetworkApp\BojanDamchevski.SimpleSocialNetworkApp\SimpleSocialNetworkApp.Services\obj\Debug\netcoreapp3.1\SimpleSocialNetworkApp.Services.csproj.CopyComplete
+C:\Users\Com\Desktop\BojanDamchevski.SimpleSocialNetworkApp\BojanDamchevski.SimpleSocialNetworkApp\SimpleSocialNetworkApp.Services\obj\Debug\netcoreapp3.1\SimpleSocialNetworkApp.Services.dll
+C:\Users\Com\Desktop\BojanDamchevski.SimpleSocialNetworkApp\BojanDamchevski.SimpleSocialNetworkApp\SimpleSocialNetworkApp.Services\obj\Debug\netcoreapp3.1\SimpleSocialNetworkApp.Services.pdb

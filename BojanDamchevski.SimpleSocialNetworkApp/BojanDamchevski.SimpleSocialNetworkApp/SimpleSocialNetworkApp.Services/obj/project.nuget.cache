@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "QOJYwGCIAtk5/E85tl3rc51vsPIMklDDYNcIrZ+kU5M5a4zMli8RMgfT3NBDjh+/5osAp5IKpf/I5xB6SOZsGA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Com\\Desktop\\BojanDamchevski.SimpleSocialNetworkApp\\BojanDamchevski.SimpleSocialNetworkApp\\SimpleSocialNetworkApp.Services\\SimpleSocialNetworkApp.Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Com\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
