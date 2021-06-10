@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gUV/ZjEXleN1YRopelqSRz8/bFbpB/zwbzM9+mA6YGZvL+yrBBKyRw57p6ktygboEfMfHvN/dI//XJBLEhpe+Q==",
+  "dgSpecHash": "lDy4LlvZQQXlXkyOIfOzumFtPuf9/d95WCW5d4RmF6/VAi+JKbkpa3euWFUdumX6TcFHtjH9AalnVGCNGIwGzg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Com\\Desktop\\BojanDamchevski.SimpleSocialNetworkApp\\BojanDamchevski.SimpleSocialNetworkApp\\SimpleSocialNetworkApp.Domain\\SimpleSocialNetworkApp.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Com\\Desktop\\Projects\\SimpleSocialNetworkApp-C-Sharp\\BojanDamchevski.SimpleSocialNetworkApp\\BojanDamchevski.SimpleSocialNetworkApp\\SimpleSocialNetworkApp.Domain\\SimpleSocialNetworkApp.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Com\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],

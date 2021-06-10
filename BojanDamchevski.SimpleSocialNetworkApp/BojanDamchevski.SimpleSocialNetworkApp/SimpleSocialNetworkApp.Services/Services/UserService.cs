@@ -38,6 +38,40 @@ namespace SimpleSocialNetworkApp.Services.Services
                     _textHelper.GenerateText("Incorrect username or password.", ConsoleColor.Red);
                     Thread.Sleep(2000);
                 }
+                else if (!user.IsAccountActive)
+                {
+                    while (true)
+                    {
+
+                        Console.Clear();
+                        _textHelper.GenerateText("Account is deactivated at the moment.\nWould you like to activate it again ?\n", ConsoleColor.Red);
+                        _textHelper.GenerateText("1.) Yes I want to activate it again. 2.) No i will log in with a different account.\n", ConsoleColor.Yellow);
+                        bool activateChoiceValidation = int.TryParse(Console.ReadLine(), out int activateChoice);
+                        if (!activateChoiceValidation)
+                        {
+                            Console.Clear();
+                            _textHelper.GenerateText("Invalid input.\nTry again.", ConsoleColor.Red);
+                            Thread.Sleep(2000);
+                        }
+                        else
+                        {
+                            if (activateChoice == 1)
+                            {
+                                user.IsAccountActive = true;
+                                _database.Update(user);
+                                Console.Clear();
+                                _textHelper.GenerateText("Account activated.", ConsoleColor.Green);
+                                Thread.Sleep(2000);
+                            }
+                            else
+                            {
+                                break;
+                            }
+                            break;
+                        }
+                        Thread.Sleep(2000);
+                    }
+                }
                 else
                 {
                     Console.Clear();
@@ -290,6 +324,196 @@ namespace SimpleSocialNetworkApp.Services.Services
                 }
                 _textHelper.GenerateText("\n\n\nPress any key to continue.", ConsoleColor.Cyan);
                 Console.ReadKey();
+            }
+        }
+
+        public void ChangePassword(User user)
+        {
+            while (true)
+            {
+                Console.Clear();
+                _textHelper.GenerateText($"Welcome {user.PersonalInfo.FirstName} to the change your password menu.", ConsoleColor.Cyan);
+                _textHelper.GenerateText("\nIf you don't want to change your password just hit ENTER to go back to the profile menu.\n", ConsoleColor.Cyan);
+                _textHelper.GenerateText("\nEnter new password:\n", ConsoleColor.Cyan);
+                string newPassword = Console.ReadLine();
+                if (newPassword == "")
+                {
+                    break;
+                }
+                user.PersonalInfo.Password = newPassword;
+                bool newPasswordValidation = _validationHelper.ValidatePassword(user);
+                if (newPasswordValidation)
+                {
+                    _database.Update(user);
+                    Console.Clear();
+                    _textHelper.GenerateText("New password approved.\n", ConsoleColor.Green);
+                    Thread.Sleep(2000);
+                    break;
+                }
+                else
+                {
+                    Console.Clear();
+                    _textHelper.GenerateText("New password not approved!", ConsoleColor.Red);
+                    Thread.Sleep(2000);
+                }
+            }
+        }
+
+        public void ChangeUsername(User user)
+        {
+            while (true)
+            {
+                Console.Clear();
+                _textHelper.GenerateText($"Welcome {user.PersonalInfo.FirstName} to the change your username menu.", ConsoleColor.Cyan);
+                _textHelper.GenerateText("\nIf you don't want to change your username just hit ENTER to go back to the profile menu.\n", ConsoleColor.Cyan);
+                _textHelper.GenerateText("\nEnter new username:\n", ConsoleColor.Cyan);
+                string newUsername = Console.ReadLine();
+                if (newUsername == "")
+                {
+                    break;
+                }
+                user.PersonalInfo.Username = newUsername;
+                bool newUsernameValidation = _validationHelper.ValidateUsername(user);
+                if (newUsernameValidation)
+                {
+                    _database.Update(user);
+                    Console.Clear();
+                    _textHelper.GenerateText("New username approved.\n", ConsoleColor.Green);
+                    Thread.Sleep(2000);
+                    break;
+                }
+                else
+                {
+                    Console.Clear();
+                    _textHelper.GenerateText("New username not approved!", ConsoleColor.Red);
+                    Thread.Sleep(2000);
+                }
+            }
+        }
+
+        public void ChangeFirstName(User user)
+        {
+            while (true)
+            {
+                Console.Clear();
+                _textHelper.GenerateText($"Welcome {user.PersonalInfo.FirstName} to the change your first name menu.", ConsoleColor.Cyan);
+                _textHelper.GenerateText("\nIf you don't want to change your first name just hit ENTER to go back to the profile menu.\n", ConsoleColor.Cyan);
+                _textHelper.GenerateText("\nEnter new first name:\n", ConsoleColor.Cyan);
+                string newFirstName = Console.ReadLine();
+                if (newFirstName == "")
+                {
+                    break;
+                }
+                user.PersonalInfo.FirstName = newFirstName;
+                bool newFirstNameValidation = _validationHelper.ValidateFirstNameLastName(user);
+                if (newFirstNameValidation)
+                {
+                    _database.Update(user);
+                    Console.Clear();
+                    _textHelper.GenerateText("New first name approved.\n", ConsoleColor.Green);
+                    Thread.Sleep(2000);
+                    break;
+                }
+                else
+                {
+                    Console.Clear();
+                    _textHelper.GenerateText("New first name not approved!", ConsoleColor.Red);
+                    Thread.Sleep(2000);
+                }
+            }
+        }
+
+        public void ChangeLastName(User user)
+        {
+            while (true)
+            {
+                Console.Clear();
+                _textHelper.GenerateText($"Welcome {user.PersonalInfo.FirstName} to the change your last name menu.", ConsoleColor.Cyan);
+                _textHelper.GenerateText("\nIf you don't want to change your last name just hit ENTER to go back to the profile menu.\n", ConsoleColor.Cyan);
+                _textHelper.GenerateText("\nEnter new last name:\n", ConsoleColor.Cyan);
+                string newLastName = Console.ReadLine();
+                if (newLastName == "")
+                {
+                    break;
+                }
+                user.PersonalInfo.LastName = newLastName;
+                bool newLastNameValidation = _validationHelper.ValidateFirstNameLastName(user);
+                if (newLastNameValidation)
+                {
+                    _database.Update(user);
+                    Console.Clear();
+                    _textHelper.GenerateText("New last name approved.\n", ConsoleColor.Green);
+                    Thread.Sleep(2000);
+                    break;
+                }
+                else
+                {
+                    Console.Clear();
+                    _textHelper.GenerateText("New last name not approved!", ConsoleColor.Red);
+                    Thread.Sleep(2000);
+                }
+            }
+        }
+
+        public void DeactivateAccount(User user)
+        {
+            user.IsAccountActive = false;
+            _database.Update(user);
+            Console.Clear();
+            _textHelper.GenerateText("Account has been deactivated.\n", ConsoleColor.Green);
+            _textHelper.GenerateText("You have to log in again!\n", ConsoleColor.Green);
+            Thread.Sleep(2000);
+        }
+
+        public void ChangeAddressInfo(User user)
+        {
+            while (true)
+            {
+                Console.Clear();
+                _textHelper.GenerateText($"Welcome {user.PersonalInfo.FirstName} to the change your address information menu.", ConsoleColor.Cyan);
+                _textHelper.GenerateText("\nIf you don't want to change your address information just hit ENTER to go back to the profile menu.\n", ConsoleColor.Cyan);
+                _textHelper.GenerateText("\nEnter new street name:\n", ConsoleColor.Cyan);
+                string newStreet = Console.ReadLine();
+                if (newStreet == "")
+                {
+                    break;
+                }
+                _textHelper.GenerateText("\nEnter new street number name:\n", ConsoleColor.Cyan);
+                bool streetNoValidation = int.TryParse(Console.ReadLine(), out int newStreetNumberInput);
+                int newStreetNumber = newStreetNumberInput;
+                _textHelper.GenerateText("\nEnter new city name:\n", ConsoleColor.Cyan);
+                string newCity = Console.ReadLine();
+                _textHelper.GenerateText("\nEnter new country name:\n", ConsoleColor.Cyan);
+                string newCountry = Console.ReadLine();
+                if (!streetNoValidation)
+                {
+                    Console.Clear();
+                    _textHelper.GenerateText("Invalid number input,please try again.!", ConsoleColor.Red);
+                    Thread.Sleep(2000);
+                }
+                else
+                {
+
+                    user.AddressInfo.Street = newStreet;
+                    user.AddressInfo.StreetNumber = newStreetNumber;
+                    user.AddressInfo.City = newCity;
+                    user.AddressInfo.Country = newCountry;
+                    bool newAddressInfoValidation = _validationHelper.OtherValidations(user);
+                    if (newAddressInfoValidation)
+                    {
+                        _database.Update(user);
+                        Console.Clear();
+                        _textHelper.GenerateText("New address approved.\n", ConsoleColor.Green);
+                        Thread.Sleep(2000);
+                        break;
+                    }
+                    else
+                    {
+                        Console.Clear();
+                        _textHelper.GenerateText("New address not approved!", ConsoleColor.Red);
+                        Thread.Sleep(2000);
+                    }
+                }
             }
         }
     }

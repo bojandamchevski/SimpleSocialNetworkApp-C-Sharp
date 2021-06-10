@@ -16,6 +16,7 @@ namespace SimpleSocialNetworkApp.Domain.Models
             AddressInfo = new AddressInformation(street, streetNo, city, country);
             MyMessages = new List<Inbox>();
             MyFriends = new Friends();
+            IsAccountActive = true;
         }
         public override string PrintInfo()
         {

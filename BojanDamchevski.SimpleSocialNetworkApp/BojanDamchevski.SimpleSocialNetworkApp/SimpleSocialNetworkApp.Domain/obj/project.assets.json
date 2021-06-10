@@ -53,11 +53,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Com\\Desktop\\BojanDamchevski.SimpleSocialNetworkApp\\BojanDamchevski.SimpleSocialNetworkApp\\SimpleSocialNetworkApp.Domain\\SimpleSocialNetworkApp.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Com\\Desktop\\Projects\\SimpleSocialNetworkApp-C-Sharp\\BojanDamchevski.SimpleSocialNetworkApp\\BojanDamchevski.SimpleSocialNetworkApp\\SimpleSocialNetworkApp.Domain\\SimpleSocialNetworkApp.Domain.csproj",
       "projectName": "SimpleSocialNetworkApp.Domain",
-      "projectPath": "C:\\Users\\Com\\Desktop\\BojanDamchevski.SimpleSocialNetworkApp\\BojanDamchevski.SimpleSocialNetworkApp\\SimpleSocialNetworkApp.Domain\\SimpleSocialNetworkApp.Domain.csproj",
+      "projectPath": "C:\\Users\\Com\\Desktop\\Projects\\SimpleSocialNetworkApp-C-Sharp\\BojanDamchevski.SimpleSocialNetworkApp\\BojanDamchevski.SimpleSocialNetworkApp\\SimpleSocialNetworkApp.Domain\\SimpleSocialNetworkApp.Domain.csproj",
       "packagesPath": "C:\\Users\\Com\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Com\\Desktop\\BojanDamchevski.SimpleSocialNetworkApp\\BojanDamchevski.SimpleSocialNetworkApp\\SimpleSocialNetworkApp.Domain\\obj\\",
+      "outputPath": "C:\\Users\\Com\\Desktop\\Projects\\SimpleSocialNetworkApp-C-Sharp\\BojanDamchevski.SimpleSocialNetworkApp\\BojanDamchevski.SimpleSocialNetworkApp\\SimpleSocialNetworkApp.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Com\\AppData\\Roaming\\NuGet\\NuGet.Config",

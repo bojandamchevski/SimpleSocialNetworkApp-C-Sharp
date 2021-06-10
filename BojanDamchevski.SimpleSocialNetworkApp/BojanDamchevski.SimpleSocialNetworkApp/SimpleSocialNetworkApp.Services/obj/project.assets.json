@@ -71,11 +71,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Com\\Desktop\\BojanDamchevski.SimpleSocialNetworkApp\\BojanDamchevski.SimpleSocialNetworkApp\\SimpleSocialNetworkApp.Services\\SimpleSocialNetworkApp.Services.csproj",
+      "projectUniqueName": "C:\\Users\\Com\\Desktop\\Projects\\SimpleSocialNetworkApp-C-Sharp\\BojanDamchevski.SimpleSocialNetworkApp\\BojanDamchevski.SimpleSocialNetworkApp\\SimpleSocialNetworkApp.Services\\SimpleSocialNetworkApp.Services.csproj",
       "projectName": "SimpleSocialNetworkApp.Services",
-      "projectPath": "C:\\Users\\Com\\Desktop\\BojanDamchevski.SimpleSocialNetworkApp\\BojanDamchevski.SimpleSocialNetworkApp\\SimpleSocialNetworkApp.Services\\SimpleSocialNetworkApp.Services.csproj",
+      "projectPath": "C:\\Users\\Com\\Desktop\\Projects\\SimpleSocialNetworkApp-C-Sharp\\BojanDamchevski.SimpleSocialNetworkApp\\BojanDamchevski.SimpleSocialNetworkApp\\SimpleSocialNetworkApp.Services\\SimpleSocialNetworkApp.Services.csproj",
       "packagesPath": "C:\\Users\\Com\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Com\\Desktop\\BojanDamchevski.SimpleSocialNetworkApp\\BojanDamchevski.SimpleSocialNetworkApp\\SimpleSocialNetworkApp.Services\\obj\\",
+      "outputPath": "C:\\Users\\Com\\Desktop\\Projects\\SimpleSocialNetworkApp-C-Sharp\\BojanDamchevski.SimpleSocialNetworkApp\\BojanDamchevski.SimpleSocialNetworkApp\\SimpleSocialNetworkApp.Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Com\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -92,8 +92,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Com\\Desktop\\BojanDamchevski.SimpleSocialNetworkApp\\BojanDamchevski.SimpleSocialNetworkApp\\SimpleSocialNetworkApp.Domain\\SimpleSocialNetworkApp.Domain.csproj": {
-              "projectPath": "C:\\Users\\Com\\Desktop\\BojanDamchevski.SimpleSocialNetworkApp\\BojanDamchevski.SimpleSocialNetworkApp\\SimpleSocialNetworkApp.Domain\\SimpleSocialNetworkApp.Domain.csproj"
+            "C:\\Users\\Com\\Desktop\\Projects\\SimpleSocialNetworkApp-C-Sharp\\BojanDamchevski.SimpleSocialNetworkApp\\BojanDamchevski.SimpleSocialNetworkApp\\SimpleSocialNetworkApp.Domain\\SimpleSocialNetworkApp.Domain.csproj": {
+              "projectPath": "C:\\Users\\Com\\Desktop\\Projects\\SimpleSocialNetworkApp-C-Sharp\\BojanDamchevski.SimpleSocialNetworkApp\\BojanDamchevski.SimpleSocialNetworkApp\\SimpleSocialNetworkApp.Domain\\SimpleSocialNetworkApp.Domain.csproj"
             }
           }
         }

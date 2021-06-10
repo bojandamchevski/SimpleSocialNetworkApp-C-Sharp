@@ -47,7 +47,13 @@ namespace SimpleSocialNetworkApp.Services.Services
                             _textHelper.GenerateText($"2.) View friends", ConsoleColor.Yellow);
                             _textHelper.GenerateText($"3.) Send a message", ConsoleColor.Yellow);
                             _textHelper.GenerateText($"4.) View messages", ConsoleColor.Yellow);
-                            _textHelper.GenerateText($"5.) Log out", ConsoleColor.Yellow);
+                            _textHelper.GenerateText($"5.) Change password", ConsoleColor.Yellow);
+                            _textHelper.GenerateText($"6.) Change username", ConsoleColor.Yellow);
+                            _textHelper.GenerateText($"7.) Change first name", ConsoleColor.Yellow);
+                            _textHelper.GenerateText($"8.) Change last name", ConsoleColor.Yellow);
+                            _textHelper.GenerateText($"9.) Change address information", ConsoleColor.Yellow);
+                            _textHelper.GenerateText($"10.) Deactivate account", ConsoleColor.Yellow);
+                            _textHelper.GenerateText($"11.) Log out", ConsoleColor.Yellow);
                             bool profileChoiceValidation = int.TryParse(Console.ReadLine(), out int profileChoice);
                             if (!profileChoiceValidation)
                             {
@@ -57,14 +63,7 @@ namespace SimpleSocialNetworkApp.Services.Services
                             }
                             else
                             {
-                                if (profileChoice == 5)
-                                {
-                                    Console.Clear();
-                                    _textHelper.GenerateText("Logging out. Goodbye.", ConsoleColor.Green);
-                                    Thread.Sleep(2000);
-                                    break;
-                                }
-                                else if (profileChoice == 1)
+                                if (profileChoice == 1)
                                 {
                                     _userService.AddFriend(user);
                                 }
@@ -75,13 +74,45 @@ namespace SimpleSocialNetworkApp.Services.Services
                                     _textHelper.GenerateText("\nPress any key to go back to your profile menu.", ConsoleColor.Green);
                                     Console.ReadKey();
                                 }
-                                else if(profileChoice == 3)
+                                else if (profileChoice == 3)
                                 {
                                     _userService.SendMessage(user);
                                 }
                                 else if (profileChoice == 4)
                                 {
                                     _userService.ViewMessages(user);
+                                }
+                                else if (profileChoice == 5)
+                                {
+                                    _userService.ChangePassword(user);
+                                }
+                                else if (profileChoice == 6)
+                                {
+                                    _userService.ChangeUsername(user);
+                                }
+                                else if (profileChoice == 7)
+                                {
+                                    _userService.ChangeFirstName(user);
+                                }
+                                else if (profileChoice == 8)
+                                {
+                                    _userService.ChangeLastName(user);
+                                }
+                                else if (profileChoice == 9)
+                                {
+                                    _userService.ChangeAddressInfo(user);
+                                }
+                                else if (profileChoice == 10)
+                                {
+                                    _userService.DeactivateAccount(user);
+                                    break;
+                                }
+                                else if (profileChoice == 11)
+                                {
+                                    Console.Clear();
+                                    _textHelper.GenerateText("Logging out. Goodbye.", ConsoleColor.Green);
+                                    Thread.Sleep(2000);
+                                    break;
                                 }
                                 else
                                 {
